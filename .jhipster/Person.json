@@ -1,0 +1,34 @@
+{
+  "applications": "*",
+  "changelogDate": "20231023111013",
+  "dto": "mapstruct",
+  "entityTableName": "person",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "surname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "Gender",
+      "fieldValues": "MALE,FEMALE"
+    }
+  ],
+  "microserviceName": "person",
+  "name": "Person",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "car",
+      "relationshipName": "cars",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
